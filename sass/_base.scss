@@ -1,0 +1,30 @@
+$color-primary-grey: #4a4a45;
+$color-primary-motard:#e9ad29;
+$color-background-light:#faf8f3;
+$color-font-light:#e4e4e4;
+
+
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  cursor: pointer
+}

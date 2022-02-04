@@ -1,0 +1,53 @@
+.about {
+  background-color:$color-background-light;
+  display: grid;
+  grid-template-columns: 6vw repeat(2, 1fr) 6vw;
+  grid-template-rows: 6vh repeat(2, 1fr) 4vh;
+  &__description {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    padding: 3rem 4vw;
+    display: grid;
+    grid-gap: 2rem;
+    align-content: center;
+    justify-items: start;
+    &__heading-2 {
+      font-size: 4rem;
+      line-height: 1;
+      color: $color-primary-motard;
+    }
+    &__heading-3 {
+      font-size: 1.6rem;
+      color: #5c5c5c;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+      margin-bottom: 4rem;
+      color: #5c5c5c;
+    }
+
+    .btn {
+      background-color: $color-primary-motard;
+      color: #5c5c5c;
+      border: none;
+      border-radius: 0;
+      font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 1.8rem 3rem;
+      cursor: pointer;
+    }
+  }
+  &__photo {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.advantages {
+  height: 60vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-grey, 0.8),
+      rgba($color-primary-motard, 0.8)
+    ),
+    url(../img/class.jpeg);
+
+  &__heading--2 {
+    font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 4rem;
+    line-height: 1;
+    color: $color-primary-motard;
+    text-transform: uppercase;
+    padding: 2.5rem 3rem;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    //transform: translateY(2.5rem);
+    &__item {
+      height: 50%;
+      background-color: rgba(#fff, 0.8);
+      font-size: 1.5rem;
+      padding: 1rem;
+      margin: 1.5rem;
+      text-align: center;
+      border-radius: 3px;
+      box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      transition: transform 0.3s;
+      &__photo {
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+      }
+      &__heading {
+        color: $color-primary-grey;
+        padding-bottom: 1.2rem;
+      }
+      &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+      }
+    }
+  }
+}
