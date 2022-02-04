@@ -1,0 +1,81 @@
+.story {
+  background-image: linear-gradient(rgb(82, 82, 82), rgb(233, 173, 41));
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 38rem;
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+
+    &__item {
+      position: relative;
+      background: linear-gradient(
+        180deg,
+        rgba(8, 14, 31, 0),
+        #080e1f 80%,
+        #080e1f
+      );
+      &__photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+      &__description {
+        background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9));
+        position: absolute;
+        bottom: 0;
+        color: $color-font-light;
+        padding:2rem;
+
+        &__heading {
+          text-align: center;
+          color: $color-primary-motard;
+          font-size: 1.6rem;
+          padding-bottom: 1rem;
+        }
+
+        &__text {
+          text-justify: auto;
+          color: $color-font-light;
+          font-size: 1.2rem;
+        }
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &__partner {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #5c5c5c;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 3px;
+      display: block;
+      background-color: currentColor;
+    }
+  }
+  &__partner-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    padding: 3rem 0;
+
+    img {
+      max-height: 2.5rem;
+      max-width: 100%;
+      filter: brightness(35%);
+    }
+  }
+}
